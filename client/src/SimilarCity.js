@@ -33,7 +33,7 @@ function SimilarCity() {
     return (
       <li key={product._id} className="list__item product">
       <item>City Similarity</item>
-        <table>
+      <table>
         <tr>
         <th>College ID</th>
         <th>Name</th>
@@ -44,8 +44,18 @@ function SimilarCity() {
         <th>Students</th>
         <th>Courses</th>
         </tr>
-        </table>
-        <p>{product.cid}</p>
+        <tr>
+        <th>{product.cid}</th>
+        <th>{product.name}</th>
+        <th>{product.year}</th>
+        <th>{product.city}</th>
+        <th>{product.state}</th>
+        <th>{product.country}</th>
+        <th>{product.students}</th>
+        <th>{product.courses}</th>
+        
+        </tr>
+        </table>  
       </li>
     );
   };
